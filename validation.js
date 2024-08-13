@@ -19,7 +19,9 @@ export function validation() {
   });
 
   let password = document.getElementById("passwordField");
-  password.addEventListener("keyup", function () {
+  password.addEventListener("keyup", passwordValidation);
+
+  function passwordValidation() {
     let passwordPattern =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
     let passwError = document.getElementById("error-UserPassw");
@@ -34,5 +36,7 @@ export function validation() {
     if (passwValue.trim() === "") {
       passwError.innerHTML = "";
     }
-  });
+  }
+
+  const 
 }

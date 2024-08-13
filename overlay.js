@@ -7,5 +7,7 @@ export function overlay() {
   let NewAcc = document.getElementById("register");
   NewAcc.addEventListener("click", function () {
     overlay.classList.add("active");
+    document.getElementById("error-userEmail").innerHTML = "";
+    document.getElementById("error-UserPassw").innerHTML = "";
   });
 }
