@@ -1,0 +1,106 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: aquamarine;
+}
+.close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 35px;
+  color: rgb(24, 24, 24);
+  cursor: pointer;
+}
+.overlay.active {
+  display: block;
+}
+.formDiv-box {
+  display: flex;
+  gap: 20px;
+}
+.formDiv2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 48%;
+}
+.registerForm {
+  max-width: 500px;
+  width: 100%;
+}
+.phone-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.div-center {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.divCenter {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  display: flex;
+  justify-content: space-around;
+}
+.forCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.UserName {
+  border-radius: 20px;
+  background-color: wheat;
+}
+.UserName:focus {
+  outline: none;
+}
+.formDiv {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.code {
+  height: 25px;
+  background-color: aqua;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+.SignUpBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  background-color: black;
+  color: yellow;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.fontSize {
+  font-size: 30px;
+}
+.phoneN {
+  background-color: red;
+  border-radius: 20px;
+}
+.phoneN:focus {
+  outline: none;
+}
+.password {
+  box-shadow: black 5px 5px 10px;
+  border: none;
+  margin-bottom: 10px;
+}

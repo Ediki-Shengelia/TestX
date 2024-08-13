@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .login-flex {
+    flex-direction: column;
+  }
+  .flex-box{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .ImgLogo{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+}

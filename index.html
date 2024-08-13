@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TestY</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="RegisterOverlay.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <main>
+      <section class="login-section">
+        <div class="login-container">
+          <h2>Login to access the page</h2>
+          <div class="login-flex">
+            <img src="img/cars.png" class="ImgLogo" alt="" />
+            <div class="flex-box">
+              <form action="" id="FormEl" class="form">
+                <div class="column">
+                  <label for="emailField">Email</label>
+                  <input
+                    type="email"
+                    name="userEmail"
+                    id="emailField"
+                    class="input"
+                  />
+                </div>
+                <p class="error-text" id="error-userEmail"></p>
+                <div class="column">
+                  <label for="passwordField">password</label>
+                  <input
+                    type="password"
+                    name="UserPassw"
+                    id="passwordField"
+                    class="input2"
+                  />
+                  <i class="fa-regular fa-eye eye" id="eye"></i>
+                </div>
+                <p class="error-text" id="error-UserPassw"></p>
+
+                <div class="btn-flex">
+                  <button class="login" id="login">Log In</button>
+                </div>
+              </form>
+              <button class="register" id="register">Create New Account</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay" id="overlay">
+      <i class="fa-solid fa-circle-xmark close" id="close"></i>
+      <div class="forCenter">
+        <form action="" id="registerForm" class="registerForm">
+          <div class="formDiv">
+            <label for="UserNameField">UserName</label>
+            <input
+              type="text"
+              name="userName"
+              id="UserNameField"
+              class="UserName"
+            />
+          </div>
+          <div class="formDiv-box">
+            <div class="formDiv2">
+              <label for="MainPassword">password</label>
+              <input type="password" name="passw" id="MainPassword"  class="password"/>
+            </div>
+            <div class="formDiv2">
+              <label for="RepeatPassword">Repeat Password</label>
+              <input type="password" name="passw2" id="RepeatPassword" class="password" />
+            </div>
+          </div>
+          <!-- ? -->
+          <div class="phone-flex">
+            <select name="plan" id="phoneCode" class="code">
+              <option value="none" selected disabled hidden>
+                Country_code
+              </option>
+              <option value="georgia">+995</option>
+              <option value="Azerbaijan">+994</option>
+              <option value="Nepal">+977</option>
+              <option value="Ukraine">+380</option>
+              <option value="India">+91</option>
+              <option value="China">+86</option>
+            </select>
+            <div class="formDiv2">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" name="phone" id="phoneNumber" class="phoneN" />
+            </div>
+          </div>
+          <div class="div-center">
+            <div>
+              <input type="radio" name="gender" id="genderinput" />
+              <label for="gender" class="fontSize">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="genderinput" />
+              <label for="gender" class="fontSize">Female</label>
+            </div>
+          </div>
+          <div class="divCenter">
+            <input type="checkbox" name="agree" id="save" />
+            <label for="agree" class="fontSize">I Agree</label>
+          </div>
+          <div class="center">
+            <button class="SignUpBtn">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

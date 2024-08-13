@@ -1,0 +1,96 @@
+main {
+  max-width: 1440px;
+  width: 100%;
+}
+.login-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.login-container h2 {
+  line-height: 48px;
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: black 5px 5px 10px;
+}
+.login-flex {
+  display: flex;
+  gap: 20px;
+}
+.ImgLogo {
+  width: 49%;
+  height: 220px;
+}
+.flex-box {
+  width: 49%;
+  background-color: red;
+  padding: 20px;
+  border-radius: 15px;
+}
+.input {
+  border-radius: 25px;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.input2 {
+  border-radius: 25px;
+  width: 100%;
+}
+.login {
+  border-radius: 20px;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.register {
+  border-radius: 20px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(123, 255, 0);
+  cursor: pointer;
+  background-color: black;
+  margin-top: 20px;
+}
+.column {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+}
+.input:focus,
+.input2:focus {
+  outline: none;
+}
+.eye {
+  display: none;
+}
+.error-text {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
