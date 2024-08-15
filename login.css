@@ -74,9 +74,12 @@ main {
   background-color: black;
   margin-top: 20px;
 }
-.column {
+.column,
+.div1,
+.div2 {
   position: relative;
 }
+
 .eye {
   position: absolute;
   bottom: 2px;
@@ -88,6 +91,18 @@ main {
 }
 .eye {
   display: none;
+}
+.eye2 {
+  position: absolute;
+  right: 10px;
+  bottom: 1px;
+  display: none;
+}
+.eye3 {
+  position: absolute;
+  right: 10px;
+  display: none;
+  bottom: 1px;
 }
 .error-text {
   color: rgb(0, 0, 0);

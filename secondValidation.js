@@ -56,8 +56,9 @@ export function secondVAlidation() {
         errorElement.innerText = errors[index];
       }
     }
+
     if (Object.keys(errors).length === 0) {
-      alert("you can not regiter at this moment");
+      alert("you can not register at this moment");
     }
   });
 }
