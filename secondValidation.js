@@ -4,37 +4,35 @@ export function secondVAlidation() {
   let formEl = document.getElementById("registerForm");
   formEl.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    let errors = {};
+
     this.querySelectorAll(".error-text").forEach((item) => {
       item.innerText = " ";
     });
     let userName = document.getElementById("UserNameField").value;
     if (userName.trim() === "") {
-      let userNameError = document.getElementById("error-userName");
-      userNameError.innerText = "username value can not be empty";
+      errors.userName = "username value can not be empty";
     }
 
     let password2 = document.getElementById("MainPassword");
     let password3 = document.getElementById("RepeatPassword");
     if (password2.value.trim() === "") {
-      let passwError = document.getElementById("error-passw");
-      passwError.innerText = "password value can not be empty";
+      errors.passw = "password value can not be empty";
     }
     if (password3.value.trim() === "") {
-      let passwError = document.getElementById("error-passw2");
-      passwError.innerText = "password value can not be empty";
+      errors.passw2 = "password value can not be empty";
     }
 
     if (password2.value != password3.value) {
-      let passwError = document.getElementById("error-passw2");
-      passwError.innerText = "password values must be same";
+      errors.passw = "password values must be same";
     }
 
     select();
 
     let phoneNumberValue = document.getElementById("phoneNumber").value;
     if (phoneNumberValue.trim() === "") {
-      let phoneNumberError = document.getElementById("error-phone");
-      phoneNumberError.innerText = "phone number value can not be empty";
+      errors.phone = "phone number value can not be empty";
     }
 
     let gender = false;
@@ -44,15 +42,22 @@ export function secondVAlidation() {
       }
     });
     if (!gender) {
-      let genderError = document.getElementById("error-gender");
-      genderError.innerText = "select your gender";
+      errors.gender = "select your gender";
     }
 
     let check = document.getElementById("save").checked;
     if (!check) {
-      let checkError = document.getElementById("error-agree");
-      checkError.innerText = "you must agree terms and conditions";
-    
+      errors.agree = "you must agree terms and conditions";
+    }
+
+    for (let index in errors) {
+      let errorElement = document.getElementById("error-" + index);
+      if (errorElement) {
+        errorElement.innerText = errors[index];
+      }
+    }
+    if (Object.keys(errors).length === 0) {
+      alert("you can not regiter at this moment");
     }
   });
 }

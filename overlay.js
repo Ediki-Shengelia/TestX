@@ -24,5 +24,7 @@ export function overlay() {
     overlay.classList.add("active");
     document.getElementById("error-userEmail").innerHTML = "";
     document.getElementById("error-UserPassw").innerHTML = "";
+    document.getElementById("emailField").value = "";
+    document.getElementById("passwordField").value = "";
   });
 }
