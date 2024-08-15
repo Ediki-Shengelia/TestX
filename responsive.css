@@ -4,13 +4,16 @@
   .login-flex {
     flex-direction: column;
   }
-  .flex-box{
+  .flex-box {
     width: 90%;
     margin: 0 auto;
   }
-  .ImgLogo{
+  .ImgLogo {
     width: 80%;
     margin: 0 auto;
+  }
+  .image-el {
+    height: 500px;
   }
 }
 @media (max-width: 480px) {

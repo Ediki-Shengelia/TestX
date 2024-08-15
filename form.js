@@ -23,7 +23,7 @@ export function form() {
       }
     }
     if (Object.keys(errors).length === 0) {
-      alert("can not be acces at this moment");
+      window.location.href = "cars.html";
     }
   });
 }

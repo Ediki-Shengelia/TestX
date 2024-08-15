@@ -52,6 +52,7 @@ export function secondVAlidation() {
     if (!check) {
       let checkError = document.getElementById("error-agree");
       checkError.innerText = "you must agree terms and conditions";
+    
     }
   });
 }
