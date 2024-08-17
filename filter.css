@@ -1,0 +1,61 @@
+.filterH2 {
+  font-size: 35px;
+  color: red;
+  letter-spacing: 3px;
+  text-shadow: blue 3px 3px 10px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Roboto";
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.inputofFilter {
+  border-radius: 20px;
+  background-color: wheat;
+}
+.inputofFilter:focus {
+  outline: none;
+}
+
+.imageStyle {
+  width: 87%;
+  margin-bottom: 10px;
+
+  box-shadow: red 5px 5px 10px;
+}
+.someH {
+  font-size: 35px;
+  line-height: 48px;
+  text-shadow: black 4px 4px 10px;
+  color: chartreuse;
+  letter-spacing: 3px;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-align: center;
+}
+.titleH2 {
+  font-size: 35px;
+  margin: 10px 0px;
+  color: black;
+  text-shadow: red 4px 4px 10px;
+  letter-spacing: 5px;
+
+  font-weight: bold;
+  font-family: "Roboto";
+  text-align: center;
+}
+.StyleLi {
+  box-shadow: blue 4px 4px 10px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+}
+.active {
+  display: none;
+}

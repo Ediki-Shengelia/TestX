@@ -17,4 +17,14 @@
   }
 }
 @media (max-width: 480px) {
+  .titleH2 {
+    font-size: 23px;
+  }
+  .filterH2 {
+    font-size: 25px;
+  }
+  .someH{
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
