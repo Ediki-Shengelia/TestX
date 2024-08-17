@@ -5,11 +5,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-main {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
 .arrow {
   position: absolute;
   font-size: 30px;

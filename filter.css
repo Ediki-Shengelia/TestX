@@ -50,7 +50,10 @@
 }
 .StyleLi {
   box-shadow: blue 4px 4px 10px;
-  margin: 20px 0px;
+
+  width: 90%;
+  margin: 20px auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;

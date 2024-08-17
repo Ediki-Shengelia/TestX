@@ -23,8 +23,11 @@
   .filterH2 {
     font-size: 25px;
   }
-  .someH{
+  .someH {
     font-size: 20px;
     line-height: 25px;
+  }
+  .imgOfMoto {
+    height: 170px;
   }
 }
