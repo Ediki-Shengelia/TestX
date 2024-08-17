@@ -1,0 +1,30 @@
+.cookie-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cookie-notification p {
+  font-size: 35px;
+  text-shadow: rebeccapurple 3px 3px 10px;
+  letter-spacing: 2px;
+}
+.cookie-notification button {
+  background-color: red;
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}

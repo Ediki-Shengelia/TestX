@@ -7,3 +7,5 @@ import { accordion } from "./Accordion.js";
 accordion();
 import { cookieNpm } from "./cookiesNpm.js";
 cookieNpm();
+import { cookiesNotification } from "./cookiesNotification.js";
+cookiesNotification();
