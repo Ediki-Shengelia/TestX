@@ -5,3 +5,5 @@ filterOfCars();
 
 import { accordion } from "./Accordion.js";
 accordion();
+import { cookieNpm } from "./cookiesNpm.js";
+cookieNpm();
