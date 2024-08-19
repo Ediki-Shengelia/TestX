@@ -8,5 +8,4 @@ accordion();
 import { cookieNpm } from "./cookiesNpm.js";
 cookieNpm();
 
-import { Bar } from "./Bar.js";
-Bar();
+
