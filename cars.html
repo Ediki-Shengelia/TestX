@@ -13,19 +13,39 @@
     <link rel="stylesheet" href="filter.css" />
     <link rel="stylesheet" href="accordion.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="cookiesNotification.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
+    <header class="headerBG">
+      <img class="logo" src="img/cars.png" alt="" />
+      <div class="box">
+        <div class="header-container">
+          <nav class="nav-ul" id="navBar">
+            <ul class="ulList">
+              <li><a href="#firstSection">Main cars</a></li>
+              <li><a href="#SecondSection">Cars</a></li>
+              <li><a href="#thirdSection">Motorcycle</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="burger-bar" id="burgerBar">
+          <div class="top-bar"></div>
+          <div class="middle-bar"></div>
+          <div class="bottom-bar"></div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section>
+      <section id="firstSection">
         <div class="slider-wraper">
           <i class="fa-regular fa-circle-right arrow" id="arrow-right"></i>
           <i class="fa-regular fa-circle-left arrow" id="arrow-left"></i>
           <div class="slider-content" id="slider-content"></div>
         </div>
       </section>
-      <section class="filter-section">
+      <section class="filter-section" id="SecondSection">
         <div class="filter-container">
           <h2 class="filterH2">CARS FILTER</h2>
           <input
@@ -38,7 +58,7 @@
         </div>
         <div></div>
       </section>
-      <section class="accordion-section-bg">
+      <section class="accordion-section-bg" id="thirdSection">
         <h2 class="moto">Motorcycle</h2>
         <div class="accordionContainer">
           <div class="AccordionBlock">
